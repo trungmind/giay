@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chitiet.css">
+    
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="image/logo.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="home.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="sanpham.html">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="profile.html">Cá nhân</a>
+                </div>
+                <div class="item">
+                    <a href="lienhe.html">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="login.html">Đăng nhập/đăng ký</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <a href="tranggiohang.html">
+                    <img src="image/icon xe hàng.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <img src="image/searsh.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="headline">
+            <h2>Chỉ tiết sản phẩm</h2>
+        </div>
+
+        <div class="noidungtrai">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="image/chitietgiay/thang.jpg" style="width:80%">
+                 
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="image/chitietgiay/phai.jpeg" style="width:80%">
+                  
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="image/chitietgiay/trai.jpg" style="width:80%">
+                 
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="image/chitietgiay/sau.jpg" style="width:80%">
+                    
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="image/chitietgiay/zoom.jpeg" style="width:80%">
+                    
+                  </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+        </div>
+
+        <div class="noidungphai">
+            <br>
+                <h1>Giày Nike Air More Uptempo Wheat</h1>
+
+                <h3 class="lienket"><span style="color: blue;"><a href="https://www.facebook.com/">Liên hệ</a></span></h3>
+
+                <h3>Tình trạng: <span style="color: blue;">Còn hàng</span></h3>
+                <p><b>Giá :</b><span style="color: red;"> 5.500.000 VNĐ</span></p>
+
+                <div class="thu-nghiem-zoom">
+                    <img src="image/chitietgiay/thang.jpg" alt="" width="100px">
+                    <img src="image/chitietgiay/phai.jpeg" alt="" width="100px">
+                    <img src="image/chitietgiay/trai.jpg" alt="" width="100px">
+                    <img src="image/chitietgiay/sau.jpg" alt="" width="100px">
+                    <img src="image/chitietgiay/zoom.jpeg" alt="" width="100px">
+                </div>
+                <button class="btn btn1">Mua hàng</button>
+        </div>
+
+        <div id="comment">
+            <h3>Giày Nike Air More Uptempo Wheat</h3>
+            <div id="comment-body">
+                <div class="prev">
+                    <a href="#">
+                        <img src="image/" alt="">
+                    </a>
+                </div>
+                <ul id="list-comment">
+                    <li class="item">
+                        <div class="text">
+                            <p>
+                                Bộ sưu tập Flax của Nike Sportswear cho mùa thu năm 2017 bao gồm Air More Uptempo Premium ‘Wheat’, được làm với nubuck Flax cao cấp ở phần lớn mặt trên. Chữ Tonal ‘AIR’ nổi bật trên các mặt bên và các lỗ đục tinh tế xuyên suốt giúp tăng khả năng thở. Tương phản với đế giữa màu trắng và bộ đệm Air có chiều dài đầy đủ, đôi giày cũng sử dụng đế ngoài bằng kẹo cao su để mang đến cho quả bóng rổ di sản một lớp hoàn thiện tinh xảo.
+                            </p> 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+</html>

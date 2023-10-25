@@ -1,0 +1,220 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+}
+#header {
+    width: 100%;
+    padding:0px 30px;
+    margin-top:33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #e1e1ba;
+}
+
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item {
+    margin:0px 25px;
+}
+
+#menu .item a {
+    color:#ae0023;
+    text-decoration: none;
+
+}
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin-left:22px;
+}
+
+.login{
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgb(150, 2, 44);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    
+}
+.h2{
+    color: brown;
+    font-family: sans-serif;
+}
+.login input{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 20px;
+}
+.login button{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(96, 6, 32);
+    color: rgb(147, 141, 141);
+}
+.login button:hover{
+    font-size: 15px;
+}
+
+
+
+/* Form login */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: black; */
+     background-image: url('image/backgound11.webp');
+    background-position: center;
+    background-size: cover; 
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+.fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+  .col {
+   
+    width: 100%;
+    padding: 20px 20px;
+    margin: 20px 0 18px ;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+  }
